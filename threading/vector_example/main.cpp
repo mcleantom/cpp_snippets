@@ -15,11 +15,11 @@ public:
 		v.push_back(x);
 	}
 	size_t size() {
-		std::unique_lock<std::shared_mutex> lock(this->mutex_);
+		std::unique_lock<std::shared_mutex> lock(mutex_);
 		return this->v.size();
 	}
 	void set(int i, T x) {
-		std::unique_lock<std::shared_mutex> lock(this->mutex_);
+		std::unique_lock<std::shared_mutex> lock(mutex_);
 		v[i] = x;
 	}
 	T get(int i) {
