@@ -18,3 +18,4 @@ if(MSVC)
 endif()
 
 add_subdirectory(threading)
+add_subdirectory(maths)
