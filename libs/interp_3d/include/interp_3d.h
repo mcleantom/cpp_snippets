@@ -1,5 +1,5 @@
-#ifndef INTERPOLATOR_3D_H
-#define INTERPOLATOR_3D_H
+#ifndef INTERP_3D_H
+#define INTERP_3D_H
 
 #include <vector>
 

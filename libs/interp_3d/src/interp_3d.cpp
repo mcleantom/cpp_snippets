@@ -2,7 +2,7 @@
 #include <cmath>
 #include <limits>
 #include <vector>
-#include "interpolator_3d.h"
+#include "interp_3d.h"
 #include <limits>
 
 bool is_even_spacing(std::vector<float> arr);
@@ -57,7 +57,7 @@ float Interpolator3D::interp_single_point(float x, float y, float z)
     v6 = m_data[ix + 1][iy][iz + 1];
     v7 = m_data[ix][iy + 1][iz + 1];
     v8 = m_data[ix + 1][iy + 1][iz + 1];
-    return interpolate_3d(v1, v2, v3, v4, v5, v6, v7, v8, x-m_x[ix], y-m_y[iy], z-m_z[iz]);
+    return interpolate_3d(v1, v2, v3, v4, v5, v6, v7, v8, x - m_x[ix], y - m_y[iy], z - m_z[iz]);
 }
 
 int get_left_index(std::vector<float>* v, float x)

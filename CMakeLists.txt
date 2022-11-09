@@ -17,5 +17,4 @@ if(MSVC)
   endforeach()
 endif()
 
-add_subdirectory(threading)
-add_subdirectory(maths)
+add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/libs)
