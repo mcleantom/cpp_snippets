@@ -1,0 +1,1 @@
+add_executable(genetic_algorithm "src/main.cpp")
