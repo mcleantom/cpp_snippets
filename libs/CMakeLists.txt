@@ -1,3 +1,4 @@
 add_subdirectory(interp_3d)
 add_subdirectory(thread_vector)
 add_subdirectory(genetic_algorithm)
+add_subdirectory(graph)
